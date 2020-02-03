@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include<time.h>
+int main()
+{
+  int array[10000], search, c, n, i=10000;
+  clock_t t; 
+  t = clock(); 
+  printf("Enter number of elements in array\n"); 
+  scanf("%d", &n);
+
+  printf("Enter %d integer(s)\n", n);
+
+  for (c = 0; c < n; c++)
+   {
+       array[c]= i;
+       i--;
+   }
+
+  printf("Enter a number to search\n");
+  scanf("%d", &search);
+
+  for (c = 0; c < n; c++)
+  {
+    if (array[c] == search)    /* If required element is found */
+    {
+      printf("%d is present at location %d.\n", search, c+1);
+      break;
+    }
+  }
+  if (c == n)
+    printf("%d isn't present in the array.\n", search);
+  t = clock() - t; 
+  double time_taken = ((double)t)/CLOCKS_PER_SEC;
+  printf("program took %f seconds to execute \n", time_taken);
+  return 0;
+}
