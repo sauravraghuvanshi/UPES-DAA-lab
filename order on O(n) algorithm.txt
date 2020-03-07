@@ -1,0 +1,10 @@
+O(n): Time Complexity of a loop is considered as O(n) if the loop variables is incremented / decremented by a constant amount. For example following functions have O(n) time complexity.
+
+   // Here c is a positive integer constant   
+   for (int i = 1; i <= n; i += c) {  
+        // some O(1) expressions
+   }
+
+   for (int i = n; i > 0; i -= c) {
+        // some O(1) expressions
+   }
