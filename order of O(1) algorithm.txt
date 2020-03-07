@@ -1,0 +1,12 @@
+O(1): Time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain loop, recursion and call to any other non-constant time function.
+
+   // set of non-recursive and non-loop statements
+
+For example swap() function has O(1) time complexity.
+A loop or recursion that runs a constant number of times is also considered as O(1). 
+For example the following loop is O(1). 
+
+// Here c is a constant   
+   for (int i = 1; i <= c; i++) {  
+        // some O(1) expressions
+   }
