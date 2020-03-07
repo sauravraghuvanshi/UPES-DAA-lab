@@ -1,0 +1,14 @@
+O(n^c): Time complexity of nested loops is equal to the number of times the innermost statement is executed. For example the following sample loops have O(n2) time complexity
+
+  
+   for (int i = 1; i <=n; i += c) {
+       for (int j = 1; j <=n; j += c) {
+          // some O(1) expressions
+       }
+   }
+
+   for (int i = n; i > 0; i -= c) {
+       for (int j = i+1; j <=n; j += c) {
+          // some O(1) expressions
+   }
+For example Selection sort and Insertion Sort have O(n2) time complexity.
