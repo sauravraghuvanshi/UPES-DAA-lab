@@ -1,0 +1,10 @@
+O(LogLogn) Time Complexity of a loop is considered as O(LogLogn) if the loop variables is reduced / increased exponentially by a constant amount.
+
+   // Here c is a constant greater than 1   
+   for (int i = 2; i <=n; i = pow(i, c)) { 
+       // some O(1) expressions
+   }
+   //Here fun is sqrt or cuberoot or any other constant root
+   for (int i = n; i > 1; i = fun(i)) { 
+       // some O(1) expressions
+   }
